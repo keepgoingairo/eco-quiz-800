@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --line: rgba(16, 33, 62, 0.1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #10213e;
+  background:
+    radial-gradient(circle at top left, rgba(80, 144, 255, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 30%),
+    linear-gradient(180deg, #f8fbff 0%, #eff5ff 55%, #f8fbff 100%);
+  font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+.shell { width: min(1200px, calc(100% - 24px)); margin: 0 auto; }
+.glass-card {
+  background: linear-gradient(180deg, rgba(15, 39, 75, 0.96), rgba(20, 54, 102, 0.92));
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 45px rgba(15, 39, 75, 0.22);
+  color: #fff;
+}
+.glass-card .text-slate-950,
+.glass-card .text-slate-900,
+.glass-card .text-slate-800,
+.glass-card .text-slate-700,
+.glass-card .text-slate-600,
+.glass-card .text-slate-500,
+.glass-card .text-blue-950,
+.glass-card .text-blue-900,
+.glass-card .text-blue-800,
+.glass-card .text-blue-700,
+.glass-card .text-emerald-800,
+.glass-card .text-rose-800,
+.glass-card .text-amber-800 { color: #fff !important; }
+.glass-card .bg-white,
+.glass-card .bg-slate-50,
+.glass-card .bg-slate-100,
+.glass-card .bg-blue-50,
+.glass-card .bg-blue-100,
+.glass-card .bg-emerald-100,
+.glass-card .bg-rose-100,
+.glass-card .bg-amber-100 { background: rgba(255, 255, 255, 0.12) !important; }
+.glass-card .border-slate-200,
+.glass-card .border-blue-200,
+.glass-card .border-amber-300 { border-color: rgba(255, 255, 255, 0.18) !important; }
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(30, 99, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 99, 255, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.section-title {
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.hero-title {
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+}
+.soft-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.brush-accent {
+  font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.teacher-bubble { position: relative; }
+.teacher-bubble::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 28px;
+  width: 22px;
+  height: 22px;
+  background: #173766;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  transform: rotate(45deg);
+}
+.quiz-heading {
+  font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", sans-serif;
+  font-size: 1.03rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  word-break: keep-all;
+}
+.quiz-emphasis {
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: #fde68a;
+}
+.quiz-body {
+  font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", sans-serif;
+  font-size: clamp(1rem, 1.08vw, 1.08rem);
+  line-height: 1.9;
+  letter-spacing: -0.012em;
+  word-break: keep-all;
+}
+.quiz-choice {
+  font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", sans-serif;
+  font-size: 1.03rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  word-break: keep-all;
+}
+.quiz-support {
+  font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", sans-serif;
+  font-size: 0.97rem;
+  line-height: 1.85;
+  letter-spacing: -0.008em;
+  word-break: keep-all;
+}
